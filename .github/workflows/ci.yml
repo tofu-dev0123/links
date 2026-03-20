@@ -4,6 +4,14 @@ on:
   pull_request:
     branches:
       - main
+      - develop
+    paths:
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - "eslint.config.mjs"
+      - ".prettierrc.json"
 
 jobs:
   check:
