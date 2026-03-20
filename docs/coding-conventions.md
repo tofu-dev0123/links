@@ -1,0 +1,23 @@
+# コーディング規約
+
+## 命名規則
+
+| 対象 | 規則 | 例 |
+| --- | --- | --- |
+| コンポーネント名・ファイル名 | PascalCase | `LinkCard.tsx` |
+| 変数・関数 | camelCase | `linkData`, `handleClick` |
+| 定数 | UPPER_SNAKE_CASE | `MAX_LINKS` |
+
+## TypeScript
+
+| 項目 | 方針 |
+| --- | --- |
+| `any` 型 | 使用禁止 |
+| 型定義 | `type` に統一（`interface` は使用しない） |
+
+## コードスタイル
+
+| 項目 | 方針 |
+| --- | --- |
+| セミコロン | あり |
+| コンポーネント定義 | `function` 宣言を使用 |
