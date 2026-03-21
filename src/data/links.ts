@@ -11,7 +11,7 @@ export const LINKS: Link[] = [
   {
     name: "X",
     url: "#",
-    icon: "/icons/x.svg",
+    icon: "/icons/x.png",
     description: "日々の気づきをつぶやいています",
     visible: true,
   },
@@ -25,7 +25,7 @@ export const LINKS: Link[] = [
   {
     name: "note",
     url: "#",
-    icon: "/icons/note.svg",
+    icon: "/icons/note.png",
     description: "記事を書いています",
     visible: true,
   },
