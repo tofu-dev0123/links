@@ -36,16 +36,22 @@ description: >
 ### Step 3: UIデザインファイルの保存
 
 タイムスタンプを生成し、合意した仕様を以下のパスに保存する:
+
 ```
 docs/design/ui/[YYYYMMDD-HHMMSS].md
 ```
 
 ファイル形式はテンプレートに従った構造化Markdown:
+
 ```markdown
 ## 目的
+
 ## レイアウト
+
 ## コンポーネント
+
 ## 状態・バリアント
+
 ## 備考
 ```
 
@@ -73,6 +79,7 @@ npx playwright screenshot \
 ```
 
 Playwrightのブラウザが未インストールの場合は先に実行:
+
 ```bash
 npx playwright install chromium
 ```
