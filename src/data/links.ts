@@ -4,7 +4,7 @@ export const LINKS: Link[] = [
   {
     name: "GitHub",
     url: "#",
-    icon: "/icons/github.svg",
+    icon: "/icons/github.png",
     description: "ソースコードを公開しています",
     visible: true,
   },
