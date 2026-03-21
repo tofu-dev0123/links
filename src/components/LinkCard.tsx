@@ -1,3 +1,5 @@
+"use client";
+
 import { ExternalLink } from "lucide-react";
 import { type Link } from "@/types/link";
 
