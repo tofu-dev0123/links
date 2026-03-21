@@ -42,17 +42,24 @@ description: >
 ### Step 3: アイコン仕様ファイルの保存
 
 タイムスタンプを生成し、合意した仕様を以下のパスに保存する:
+
 ```
 docs/design/icons/[YYYYMMDD-HHMMSS].md
 ```
 
 ファイル形式:
+
 ```markdown
 ## サービス名
+
 ## スタイル
+
 ## 背景
+
 ## カラー
+
 ## 形状・デザイン詳細
+
 ## ファイル名
 ```
 
@@ -89,6 +96,7 @@ npx playwright screenshot \
 ```
 
 Playwrightのブラウザが未インストールの場合は先に実行:
+
 ```bash
 npx playwright install chromium
 ```
