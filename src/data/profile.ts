@@ -1,5 +1,5 @@
 export const PROFILE = {
-  avatar: "/icons/tofu.png",
+  avatar: "/icons/tofu-sm.png",
   name: "Tofu",
   subtitle: "",
 } as const;
