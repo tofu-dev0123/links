@@ -17,7 +17,7 @@ export function LinkCard({ link }: LinkCardProps) {
     >
       {/* PC layout: horizontal (sm and above) */}
       <div
-        className="hidden w-[340px] cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-[var(--background)] p-4 no-underline sm:flex"
+        className="hidden w-full cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-[var(--background)] p-4 no-underline sm:flex"
         style={{
           borderColor: "var(--border)",
           color: "inherit",

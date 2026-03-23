@@ -10,13 +10,8 @@ export function LinkSection({ links }: LinkSectionProps) {
 
   return (
     <div className="flex justify-center">
-      {/* PC: 2-column grid (sm and above) */}
-      <div
-        className="hidden gap-3 sm:grid"
-        style={{
-          gridTemplateColumns: "repeat(2, 340px)",
-        }}
-      >
+      {/* PC: 1-column grid (sm and above) */}
+      <div className="hidden w-full gap-3 sm:grid">
         {visibleLinks.map((link) => (
           <LinkCard key={link.name} link={link} />
         ))}
