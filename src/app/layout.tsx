@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Template project",
-  description: "Next.jsのプロジェクトのテンプレートです",
+  title: "tofu | Links",
+  description: "tofu の各種サービスへのリンク集です。",
+  icons: {
+    icon: "/icons/tofu.png",
+  },
 };
 
 export default function RootLayout({
