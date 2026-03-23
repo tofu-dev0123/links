@@ -17,7 +17,7 @@ export function LinkCard({ link }: LinkCardProps) {
     >
       {/* PC layout: horizontal (sm and above) */}
       <div
-        className="hidden w-[340px] cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-[var(--background)] p-4 no-underline sm:flex"
+        className="hidden w-full cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-white/50 p-4 no-underline backdrop-blur-md sm:flex"
         style={{
           borderColor: "var(--border)",
           color: "inherit",
@@ -37,14 +37,18 @@ export function LinkCard({ link }: LinkCardProps) {
           el.style.borderColor = "var(--border)";
         }}
       >
-        <img
-          src={link.icon}
-          alt={link.name}
-          width={40}
-          height={40}
-          className="flex-shrink-0"
-          style={{ color: "var(--primary)" }}
-        />
+        <div
+          className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border bg-white"
+          style={{ borderColor: "var(--border)" }}
+        >
+          <img
+            src={link.icon}
+            alt={link.name}
+            width={28}
+            height={28}
+            style={{ color: "var(--primary)" }}
+          />
+        </div>
         <div className="flex min-w-0 flex-1 flex-col gap-0.5">
           <span
             className="text-[0.9rem] font-semibold"
@@ -68,7 +72,7 @@ export function LinkCard({ link }: LinkCardProps) {
 
       {/* Mobile layout: vertical card (below sm) */}
       <div
-        className="relative flex h-[220px] w-[200px] cursor-pointer flex-col rounded-[var(--radius)] border bg-[var(--background)] p-4 sm:hidden"
+        className="relative flex h-[220px] w-[200px] cursor-pointer flex-col rounded-[var(--radius)] border bg-white/30 p-4 backdrop-blur-sm sm:hidden"
         style={{
           borderColor: "var(--border)",
           color: "inherit",
@@ -95,13 +99,18 @@ export function LinkCard({ link }: LinkCardProps) {
           />
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <img
-            src={link.icon}
-            alt={link.name}
-            width={64}
-            height={64}
-            style={{ color: "var(--primary)" }}
-          />
+          <div
+            className="flex h-16 w-16 items-center justify-center rounded-full border bg-white"
+            style={{ borderColor: "var(--border)" }}
+          >
+            <img
+              src={link.icon}
+              alt={link.name}
+              width={44}
+              height={44}
+              style={{ color: "var(--primary)" }}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-0.5">
           <span
