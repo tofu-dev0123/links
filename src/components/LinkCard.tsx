@@ -17,7 +17,7 @@ export function LinkCard({ link }: LinkCardProps) {
     >
       {/* PC layout: horizontal (sm and above) */}
       <div
-        className="hidden w-full cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-[var(--background)] p-4 no-underline sm:flex"
+        className="hidden w-full cursor-pointer items-center gap-3 rounded-[var(--radius)] border bg-white/50 backdrop-blur-md p-4 no-underline sm:flex"
         style={{
           borderColor: "var(--border)",
           color: "inherit",
@@ -68,7 +68,7 @@ export function LinkCard({ link }: LinkCardProps) {
 
       {/* Mobile layout: vertical card (below sm) */}
       <div
-        className="relative flex h-[220px] w-[200px] cursor-pointer flex-col rounded-[var(--radius)] border bg-[var(--background)] p-4 sm:hidden"
+        className="relative flex h-[220px] w-[200px] cursor-pointer flex-col rounded-[var(--radius)] border bg-white/30 backdrop-blur-sm p-4 sm:hidden"
         style={{
           borderColor: "var(--border)",
           color: "inherit",
