@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Template project",
-  description: "Next.jsのプロジェクトのテンプレートです",
+  title: "tofu | Links",
+  description: "tofu の各種サービスへのリンク集です。",
+  icons: {
+    icon: "/icons/tofu.png",
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+          <img
+            src="/icons/tofu-icon.png"
+            alt=""
+            className="absolute top-1/2 left-1/2 w-[130vmin] -translate-x-1/2 -translate-y-1/2 opacity-5 mix-blend-multiply sm:right-auto sm:left-0 sm:translate-x-0"
+          />
+        </div>
         {children}
       </body>
     </html>
