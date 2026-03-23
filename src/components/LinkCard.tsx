@@ -37,14 +37,15 @@ export function LinkCard({ link }: LinkCardProps) {
           el.style.borderColor = "var(--border)";
         }}
       >
-        <img
-          src={link.icon}
-          alt={link.name}
-          width={40}
-          height={40}
-          className="flex-shrink-0"
-          style={{ color: "var(--primary)" }}
-        />
+        <div className="flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-full border bg-white" style={{ borderColor: "var(--border)" }}>
+          <img
+            src={link.icon}
+            alt={link.name}
+            width={28}
+            height={28}
+            style={{ color: "var(--primary)" }}
+          />
+        </div>
         <div className="flex min-w-0 flex-1 flex-col gap-0.5">
           <span
             className="text-[0.9rem] font-semibold"
@@ -95,13 +96,15 @@ export function LinkCard({ link }: LinkCardProps) {
           />
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <img
-            src={link.icon}
-            alt={link.name}
-            width={64}
-            height={64}
-            style={{ color: "var(--primary)" }}
-          />
+          <div className="flex items-center justify-center w-16 h-16 rounded-full border bg-white" style={{ borderColor: "var(--border)" }}>
+            <img
+              src={link.icon}
+              alt={link.name}
+              width={44}
+              height={44}
+              style={{ color: "var(--primary)" }}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-0.5">
           <span
